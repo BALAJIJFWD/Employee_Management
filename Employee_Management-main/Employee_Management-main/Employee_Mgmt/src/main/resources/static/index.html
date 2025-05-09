@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2>User Management App</h2>
+  </nav>
+
+  <div class="container">
+    <h3 class="title">Users List</h3>
+    <button class="add-btn">Add User</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>User First Name</th>
+          <th>User Last Name</th>
+          <th>User Email Id</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Optional: Modal for view -->
+  <div class="modal" id="viewModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Employee Details</h3>
+      <p id="viewContent"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
